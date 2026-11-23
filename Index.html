@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FragMich – Suchmaschine</title>
+<style>
+body {
+  margin: 0;
+  background: #101827;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+main { width: 90%; max-width: 650px; text-align: center; }
+h1 { font-size: 65px; }
+h1 span { color: #55d5ff; }
+p { color: #cbd5e1; }
+form { display: flex; gap: 8px; }
+input {
+  flex: 1;
+  min-width: 0;
+  padding: 17px;
+  border: 0;
+  border-radius: 12px;
+  font-size: 17px;
+}
+button {
+  padding: 15px 22px;
+  border: 0;
+  border-radius: 12px;
+  background: #55d5ff;
+  font-weight: bold;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<main>
+  <h1>Frag<span>Mich</span></h1>
+  <p>Was möchtest du wissen?</p>
+  <form action="https://www.google.com/search" method="get">
+    <input name="q" type="search" placeholder="Hier suchen..." required>
+    <button type="submit">Suchen</button>
+  </form>
+  <p>FragMich – Deine Suche im Internet</p>
+</main>
+</body>
+</html>
